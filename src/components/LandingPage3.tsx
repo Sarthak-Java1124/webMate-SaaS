@@ -83,7 +83,7 @@ export default function LandingPage3() {
           <div className="bg-orange-100 rounded-3xl p-8 w-[400px] max-w-full shadow-xl flex flex-col gap-6" style={{ fontFamily: 'Satoshi, Arial, Helvetica, sans-serif' }}>
             {/* Profile Row */}
             <div className="flex items-center gap-4">
-              <Image src="https://randomuser.me/api/portraits/women/44.jpg" alt="Vivianne Miedema" width={56} height={56} className="w-14 h-14 rounded-full object-cover border-4 border-white shadow" />
+              <Image src="/profile_6.jpg" alt="Vivianne Miedema" width={56} height={56} className="w-14 h-14 rounded-full object-cover border-4 border-white shadow" />
               <div>
                 <div className="font-bold text-lg text-black">Vivianne Miedema</div>
                 <div className="text-gray-500 text-sm">webmate.io/Vivianne</div>
@@ -140,7 +140,7 @@ export default function LandingPage3() {
           <div className="relative bg-pink-200 rounded-[80px] w-[500px] h-[500px] flex items-center justify-center shadow-xl">
             <div className="bg-white rounded-3xl shadow-lg w-[340px] p-8 flex flex-col items-center" style={{ fontFamily: 'Satoshi, Arial, Helvetica, sans-serif' }}>
               <div className="flex items-center gap-3 mb-4">
-                <Image src="https://randomuser.me/api/portraits/men/32.jpg" alt="avatar" width={48} height={48} className="w-12 h-12 rounded-full object-cover" />
+                <Image src="/profile_7.jpg" alt="avatar" width={48} height={48} className="w-12 h-12 rounded-full object-cover" />
                 <div>
                   <div className="font-bold text-lg text-black">Book session</div>
                   <div className="text-gray-500 text-sm">Select date & time</div>

@@ -6,37 +6,37 @@ const testimonials = [
     quote: "Love the integrations with Calendar, Zoom and WhatsApp. Makes my life easier!",
     name: "Aishwarya Srinivasan",
     title: "LinkedIn Top Voice",
-    img: "https://randomuser.me/api/portraits/women/50.jpg",
+    img: "/profile_1.jpg",
   },
   {
     quote: "The entire experience is just so seamless. My followers love it",
     name: "Joerg Storm",
     title: "300K on LinkedIn",
-    img: "https://randomuser.me/api/portraits/men/51.jpg",
+    img: "/profile_2.jpg",
   },
   {
     quote: "Webmate is my go-to platform for scheduling 1:1 sessions and hosting webinars!",
     name: "Xinran Waibel",
     title: "Founder of Data Engineer Things",
-    img: "https://randomuser.me/api/portraits/women/52.jpg",
+    img: "/profile_3.jpg",
   },
   {
     quote: "The best way to monetize your expertise and connect with your audience.",
     name: "Alex Johnson",
     title: "Tech Influencer",
-    img: "https://randomuser.me/api/portraits/men/53.jpg",
+    img: "/profile_4.jpg",
   },
   {
     quote: "Super easy to use and my clients love the booking flow!",
     name: "Priya Patel",
     title: "Business Coach",
-    img: "https://randomuser.me/api/portraits/women/54.jpg",
+    img: "/profile_5.jpg",
   },
   {
     quote: "A must-have for anyone offering consulting or coaching online.",
     name: "Michael Chen",
     title: "Startup Mentor",
-    img: "https://randomuser.me/api/portraits/men/55.jpg",
+    img: "/profile_6.jpg",
   },
 ];
 
@@ -55,8 +55,8 @@ const features = [
     title: <><span className="font-extrabold text-5xl">40%</span></>,
     desc: <>increase in conversion<br/>with <span className="font-bold">testimonial showcase</span></>,
     overlay: [
-      { text: '5/5 "Loved the session"', img: 'https://randomuser.me/api/portraits/women/60.jpg' },
-      { text: '5/5 "Best advice ever"', img: 'https://randomuser.me/api/portraits/men/61.jpg' },
+      { text: '5/5 "Loved the session"', img: '/profile_7.jpg' },
+      { text: '5/5 "Best advice ever"', img: '/profile_1.jpg' },
     ],
   },
   {
@@ -172,7 +172,7 @@ export default function LandingPage4() {
               viewport={{ once: true, amount: 0.2 }}
               transition={{ duration: 0.6, delay: i * 0.15 }}
             >
-              <motion.span initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.2 }} transition={{ duration: 0.5, delay: 0.2 }} className="text-5xl text-gray-300 mb-4">“</motion.span>
+              <motion.span initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.2 }} transition={{ duration: 0.5, delay: 0.2 }} className="text-5xl text-gray-300 mb-4">"</motion.span>
               <motion.div initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.2 }} transition={{ duration: 0.5, delay: 0.25 }} className="text-black text-lg mb-8">{t.quote}</motion.div>
               <div className="flex items-center gap-4 mt-auto">
                 <Image src={t.img} alt={t.name} width={48} height={48} className="w-12 h-12 rounded-full object-cover" />
