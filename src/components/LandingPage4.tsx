@@ -172,7 +172,7 @@ export default function LandingPage4() {
               viewport={{ once: true, amount: 0.2 }}
               transition={{ duration: 0.6, delay: i * 0.15 }}
             >
-              <motion.span initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.2 }} transition={{ duration: 0.5, delay: 0.2 }} className="text-5xl text-gray-300 mb-4">"</motion.span>
+              <motion.span initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.2 }} transition={{ duration: 0.5, delay: 0.2 }} className="text-5xl text-gray-300 mb-4">&quot;</motion.span>
               <motion.div initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.2 }} transition={{ duration: 0.5, delay: 0.25 }} className="text-black text-lg mb-8">{t.quote}</motion.div>
               <div className="flex items-center gap-4 mt-auto">
                 <Image src={t.img} alt={t.name} width={48} height={48} className="w-12 h-12 rounded-full object-cover" />

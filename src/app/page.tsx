@@ -6,15 +6,16 @@ import { useEffect } from "react";
 import { FiArrowRight } from "react-icons/fi";
 import LandingPage3 from "@/components/LandingPage3";
 import LandingPage4 from "@/components/LandingPage4";
+import Image from "next/image";
 
 const cards = [
-  { name: "Ganesh Balakrishnan", subtitle: "Shark Tank India", label: "Aurm", color: "from-yellow-400 to-orange-500", img: "https://randomuser.me/api/portraits/men/32.jpg" },
-  { name: "Aditi Paul, PhD", subtitle: "Helping immigrants", label: "Dr. Paul & Company", color: "from-red-500 to-pink-500", img: "https://randomuser.me/api/portraits/women/44.jpg" },
-  { name: "Radhika Agrawal", subtitle: "Experience Design", label: "Design Consultant", color: "from-blue-500 to-cyan-400", img: "https://randomuser.me/api/portraits/women/68.jpg" },
-  { name: "Melissa (Chapman)", subtitle: "PMP eBook Author", label: "Chaucer", color: "from-yellow-400 to-purple-400", img: "https://randomuser.me/api/portraits/women/65.jpg" },
-  { name: "Expert 5", subtitle: "DeFi Analyst", label: "DeFi", color: "from-green-400 to-lime-400", img: "https://randomuser.me/api/portraits/men/45.jpg" },
-  { name: "Expert 6", subtitle: "Smart Contract Auditor", label: "Audit", color: "from-purple-500 to-indigo-400", img: "https://randomuser.me/api/portraits/men/46.jpg" },
-  { name: "Expert 7", subtitle: "DAO Strategist", label: "DAO", color: "from-pink-400 to-red-400", img: "https://randomuser.me/api/portraits/women/47.jpg" },
+  { name: "Ganesh Balakrishnan", subtitle: "Shark Tank India", label: "Aurm", color: "from-yellow-400 to-orange-500", img: "/profile_1.jpg" },
+  { name: "Aditi Paul, PhD", subtitle: "Helping immigrants", label: "Dr. Paul & Company", color: "from-red-500 to-pink-500", img: "/profile_2.jpg" },
+  { name: "Radhika Agrawal", subtitle: "Experience Design", label: "Design Consultant", color: "from-blue-500 to-cyan-400", img: "/profile_3.jpg" },
+  { name: "Melissa (Chapman)", subtitle: "PMP eBook Author", label: "Chaucer", color: "from-yellow-400 to-purple-400", img: "/profile_4.jpg" },
+  { name: "Expert 5", subtitle: "DeFi Analyst", label: "DeFi", color: "from-green-400 to-lime-400", img: "/profile_5.jpg" },
+  { name: "Expert 6", subtitle: "Smart Contract Auditor", label: "Audit", color: "from-purple-500 to-indigo-400", img: "/profile_6.jpg" },
+  { name: "Expert 7", subtitle: "DAO Strategist", label: "DAO", color: "from-pink-400 to-red-400", img: "/profile_7.jpg" },
 ];
 
 function ConveyorCards() {
@@ -42,7 +43,7 @@ function ConveyorCards() {
             className="w-[300px] h-[220px] bg-white rounded-2xl shadow-lg flex flex-col overflow-hidden border border-gray-100"
           >
             <div className={`relative h-[100px] w-full bg-gradient-to-r ${card.color} flex items-end justify-center`}> 
-              <img src={card.img} alt={card.name} className="absolute left-1/2 -translate-x-1/2 bottom-2 w-16 h-16 rounded-full border-4 border-white object-cover shadow-md" />
+              <Image src={card.img} alt={card.name} width={64} height={64} className="absolute left-1/2 -translate-x-1/2 bottom-2 w-16 h-16 rounded-full border-4 border-white object-cover shadow-md" />
               <span className="absolute top-3 left-3 bg-white/80 text-gray-800 text-xs font-semibold px-3 py-1 rounded-full shadow" style={{ fontFamily: 'Satoshi, Arial, Helvetica, sans-serif' }}>{card.label}</span>
             </div>
             <div className="flex-1 flex flex-col justify-center px-5 pt-8 pb-4">
