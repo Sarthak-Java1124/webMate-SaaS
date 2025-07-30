@@ -8,7 +8,8 @@ html, body {
 }
 
 body {
-  background: var(--foreground);
+  background: url('/bg-img.png') no-repeat center center fixed;
+  background-size: cover;
   color: var(--foreground);
   font-family: 'Satoshi', Arial, Helvetica, sans-serif;
 }

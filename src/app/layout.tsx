@@ -32,6 +32,10 @@ export default function RootLayout({
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        style={{
+          background: 'url(/bg-img.png) no-repeat center center fixed',
+          backgroundSize: 'cover'
+        }}
       >
         
         <div className="pt-16">{children}</div>
